@@ -1,0 +1,168 @@
+#twitter {
+  float: right;
+  display: inline-block;
+
+}
+
+.header {
+width: 100%;
+height: 100px;
+background-image: url("https://www.bhmpics.com/wallpapers/eagle_nebula_in_universe-1920x1080.jpg");
+}
+
+body{
+  background-color: #D0D0D0 ;
+}
+
+.title {
+  font-size: 60px;
+}
+
+
+.clickpost {
+
+  width: auto;
+  height: auto;
+  text-align: center;
+  padding: 10px;
+border: solid;
+background-color: #E8E8E8 ;
+overflow: hidden;
+
+}
+.clickpost ul.share-buttons{
+display:inline-block;margin-right:10px;
+
+}
+
+.readme {
+  border-width: 1px;
+    border: solid;
+    border-color: #B8B8B8;
+
+      margin-left: auto;
+      margin-right: auto
+
+}
+
+.aboutMe {
+  width: auto;
+  height: auto;
+  background-color: white;
+  padding: 20px;
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.aboutMe h2 {
+text-decoration: underline;
+margin-bottom: 35px;
+
+}
+
+.post {
+
+padding: 90px;
+background-color: white;
+font-size: 20px;
+
+}
+.post p{
+  margin-bottom: 60px;
+}
+
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+  float: right;
+
+}
+
+ul.share-buttons li{
+  display: inline;
+
+}
+
+.recentPosts {
+  width: auto;
+  height: auto;
+  background-color: white;
+  padding: 20px;
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      margin-top: 20px;
+      margin-bottom: 20px;
+font-size: 22px;
+
+
+}
+.recentPosts h2 {
+text-decoration: underline;
+margin-bottom: 35px;
+
+}
+
+.recentPostsImg {
+  margin: 15px;
+}
+
+
+.sidebar {
+  width: auto;
+  height: 1000px;
+}
+
+.headerlinks {
+padding: 20px;
+margin: 10px;
+  border-style : solid;
+  float: right;
+
+    font-size: 28px;
+    font-weight: bolder;
+background: white;
+box-shadow:none;
+
+}
+
+.headerlinks:hover {
+box-shadow: inset 0 0 20px black;
+
+}
+
+
+
+
+.sky {
+  background-image: url("https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg");
+  background-size: 80px 60px;
+}
+
+.big {
+font-family: fantasy;
+}
+
+#me {
+  border-radius: 50%;
+  margin-bottom: 35px;
+}
+
+.featureImage {
+width: 100%;
+height: 400px;
+align: center;
+
+}
+
+.date {
+font-size: 22px;
+font-family: sans-serif;
+color: grey;
+font-style: italic;
+
+}
+
+.author {
+  float: left;
+  font-style: italic;
+  font-size: 20px;
+
+}
