@@ -1,0 +1,5 @@
+document.write(" <div class = 'header'> ")
+document.write(" <a class ='headerlinks' href = 'Index.html'>Home</a> ")
+document.write(" <a class ='headerlinks' href = 'Index.html'>Portfolio</a> ")
+document.write(" <a  class ='headerlinks' href = 'Index.html'>About</a> ")
+document.write(" </div> ")
