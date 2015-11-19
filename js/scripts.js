@@ -3,9 +3,12 @@ $(document).ready(function (){
 
 
 
-$(".header").click(function () {
-$(this).toggleClass("sky")
+
+$("#me").hover(function () {
+$(this).toggleClass("imagehover")
 
 })
+
+
 
 });

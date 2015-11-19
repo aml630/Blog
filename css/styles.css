@@ -7,27 +7,68 @@
 .header {
 width: 100%;
 height: 100px;
-background-image: url("https://www.bhmpics.com/wallpapers/eagle_nebula_in_universe-1920x1080.jpg");
+/* background-image: url("https://www.bhmpics.com/wallpapers/eagle_nebula_in_universe-1920x1080.jpg"); */
+}
+
+#siteTitle {
+  text-decoration: none;
+
+  margin-left: 20%;
+  margin-top: 5%;
+  font-size: 90px;
+  font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', 'sans serif';
+  color: black;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+
+#siteTitle:hover {
+      color: #33FF00;
+      text-shadow: 10px 10px grey;
+      transition: all 0.2s linear 0s;
+
+}
+#underTitle {
+  font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', 'sans serif';
+  margin-left: 30%;
+padding: 20px;
+
+
+
+}
+
+.header a{
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 body{
-  background-color: #D0D0D0 ;
+  background-color: #F7F7F7  ;
 }
 
 .title {
   font-size: 60px;
 }
 
+.twitter-timeline{
 
+  box-shadow: 0 1px 3px;
+
+
+}
 .clickpost {
 
   width: auto;
   height: auto;
   text-align: center;
   padding: 10px;
-border: solid;
-background-color: #E8E8E8 ;
+background-color: white ;
 overflow: hidden;
+margin-top: 20px;
+box-shadow: 0 1px 3px;
+
 
 }
 .clickpost ul.share-buttons{
@@ -46,11 +87,14 @@ display:inline-block;margin-right:10px;
 }
 
 .aboutMe {
+  margin-top: 20px;
   width: auto;
   height: auto;
   background-color: white;
   padding: 20px;
       font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  box-shadow: 0 1px 3px;
+  text-align: center;
 }
 
 .aboutMe h2 {
@@ -61,19 +105,26 @@ margin-bottom: 35px;
 
 .post {
 
-padding: 90px;
+padding: 10px;
 background-color: white;
 font-size: 20px;
+box-shadow: 0 1px 3px;
+margin-top: 20px;
+
 
 }
 .post p{
   margin-bottom: 60px;
+
+}
+.post h1 {
+  text-align: center;
 }
 
 ul.share-buttons{
   list-style: none;
   padding: 0;
-  float: right;
+
 
 }
 
@@ -91,6 +142,7 @@ ul.share-buttons li{
       margin-top: 20px;
       margin-bottom: 20px;
 font-size: 22px;
+  box-shadow: 0 1px 3px;
 
 
 }
@@ -128,13 +180,17 @@ box-shadow: inset 0 0 20px black;
 
 }
 
+.imagehover {
 
+}
 
 
 .sky {
   background-image: url("https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg");
   background-size: 80px 60px;
 }
+
+
 
 .big {
 font-family: fantasy;
@@ -147,8 +203,10 @@ font-family: fantasy;
 
 .featureImage {
 width: 100%;
-height: 400px;
+height: 300px;
 align: center;
+box-shadow: 0 1px 3px;
+
 
 }
 
