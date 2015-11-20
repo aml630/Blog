@@ -7,34 +7,59 @@
 .header {
 width: 100%;
 height: 100px;
+  background-color: #F7F7F7  ;
+  line-height: 108px;
+
+    margin-bottom: 100px;
+    position:fixed;
+    z-index: 100;
+
+
 /* background-image: url("https://www.bhmpics.com/wallpapers/eagle_nebula_in_universe-1920x1080.jpg"); */
 }
+.topContainer{
+      margin-bottom: 10px;
+      width: 100%;
+height: 75px;
+
+  }
+
+.header.sticky {
+  width: 100%;
+  height: 90px;
+  box-shadow: 0 1px 3px;
+  transition: all .1s linear 0s;
+
+
+}
+
 
 #siteTitle {
   text-decoration: none;
 
-  margin-left: 20%;
-  margin-top: 5%;
-  font-size: 90px;
+  margin-left: 34%;
+  margin-top: 20px;
+  font-size: 37px;
   font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', 'sans serif';
   color: black;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
 	line-height: 26.4px;
+  transition: all .3s linear 0s;
+
 }
 
 #siteTitle:hover {
       color: #33FF00;
       text-shadow: 10px 10px grey;
-      transition: all 0.2s linear 0s;
+      transition: all .3s linear 0s;
 
 }
 #underTitle {
-  font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', 'sans serif';
-  margin-left: 30%;
-padding: 20px;
+  margin-left: 37%;
 
+font-size: 15px;
 
 
 }
@@ -46,10 +71,26 @@ padding: 20px;
 
 body{
   background-color: #F7F7F7  ;
+
+}
+
+.clickpost a{
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .title {
-  font-size: 60px;
+  font-size: 50px;
+  color: #33FF00;
+  text-shadow: 4px 4px grey;
+  transition: all .3s linear 0s;
+
+}
+.title:hover{
+  color: black;
+  text-shadow: none;
+  transition: all .3s linear 0s;
+
 }
 
 .twitter-timeline{
@@ -80,6 +121,7 @@ display:inline-block;margin-right:10px;
   border-width: 1px;
     border: solid;
     border-color: #B8B8B8;
+    color:black;
 
       margin-left: auto;
       margin-right: auto
@@ -98,8 +140,9 @@ display:inline-block;margin-right:10px;
 }
 
 .aboutMe h2 {
-text-decoration: underline;
 margin-bottom: 35px;
+float:left;
+
 
 }
 
@@ -110,6 +153,7 @@ background-color: white;
 font-size: 20px;
 box-shadow: 0 1px 3px;
 margin-top: 20px;
+margin-bottom: 200px;
 
 
 }
@@ -124,12 +168,15 @@ margin-top: 20px;
 ul.share-buttons{
   list-style: none;
   padding: 0;
+  display: inline-block;
+  margin-left: 20%;
 
 
 }
 
 ul.share-buttons li{
-  display: inline;
+  display: inline-block;
+  text-align: center;
 
 }
 
@@ -147,8 +194,8 @@ font-size: 22px;
 
 }
 .recentPosts h2 {
-text-decoration: underline;
 margin-bottom: 35px;
+float:left;
 
 }
 
@@ -180,6 +227,14 @@ box-shadow: inset 0 0 20px black;
 
 }
 
+
+.titleLine {
+  background: black ;
+  height: 1px;
+  overflow:hidden;
+  margin-top: 40px;
+
+}
 .imagehover {
 
 }
@@ -199,6 +254,9 @@ font-family: fantasy;
 #me {
   border-radius: 50%;
   margin-bottom: 35px;
+  box-shadow: 0 5px 13px;
+
+
 }
 
 .featureImage {
@@ -224,3 +282,86 @@ font-style: italic;
   font-size: 20px;
 
 }
+
+/* This is the CSS for the Counter/Voter I'll be messing around with */
+* {
+  box-sizing: border-box;
+}
+#count {
+  background: #9F0;
+  width: 10%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 64px;
+  margin: 0;
+  border: 3px solid green;
+  border-radius: 5px;
+}
+.score {
+  background: #9F0;
+  width: 10%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 64px;
+  margin: 0;
+  border: 3px solid green;
+  border-radius: 5px;
+}
+
+.button {
+  background: #09F;
+  width: 5%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 32px;
+  border: 3px solid blue;
+  border-radius: 5px;
+}
+.buttonup {
+  background: #09F;
+  width: 5%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 32px;
+  border: 3px solid blue;
+  border-radius: 5px;
+
+}
+.buttondown{
+  background: #09F;
+  width: 5%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 32px;
+  border: 3px solid blue;
+  border-radius: 5px;
+
+}
+.voteline {
+  padding: 10px;
+  background-color: white;
+  font-size: 20px;
+  box-shadow: 0 1px 3px;
+
+
+
+  text-align: center;
+  margin: auto;
+}
+
+.button, #count {
+  float: left;
+}
+
+#minus {
+  margin: 25px 2.5% 0 37.5%;
+}
+
+#plus {
+  margin: 25px 37.5% 0 2.5%;
+}/* end */
