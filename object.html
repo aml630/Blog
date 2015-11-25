@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="css.text" media="all">
+  <link href = "css/styles.css" rel="stylesheet" type="css.text" media="all">
+  <script src = "js/jquery-1.11.3.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src = "js/scripts.js"></script>
+    <title>Objects</title>
+</head>
+<body>
+
+<script type= "text/javascript">
+
+var customer = {
+  name: "Tom",
+  speak: function (){
+    return "My name is " + this.name;
+},
+
+address: {
+  street: "1232 Main st",
+  city: "Portland",
+  state: "OR"
+}
+
+};
+
+document.write(customer.speak() + "<br />");
+document.write(customer.name + " Lives at " + customer.address.street + "<br />")
+
+customer.address.country = "US";
+
+document.write(customer.name + " Lives in the " + customer.address.country + "<br />")
+
+function Person(name, street) {
+this.name = name;
+this.street = street;
+this.info = function() {
+  return "My name is " + this.name + "and I live on " + this.street;
+}
+}
+var bobSmith = new Person("Bob Smith" , "222 hapy st");
+
+document.write(bobSmith.info() + "<br />");
+
+document.write("Bob is a person " + (bobSmith instanceof Person) + "<br />");
+
+
+function changeName(person) {
+  person.name = "Sue Smith";
+
+}
+
+
+changeName(bobSmith);
+document.write("Bob became " + bobSmith.name + "<br />")
+
+var person1 = new Person("Paul", "122 street");
+
+
+function getSum(num1, num2) {
+  return num1+num2;
+
+
+}
+
+document.write("Number of arguments " + getSum.length + "<br />" )
+
+function Mammal(name) {
+  this.name = name;
+  this.getInfo = function () {
+    return "The mammals name is " + this.name;
+  }
+}
+
+Mammal.prototype.sound = "GRR!";
+
+Mammal.prototype.makeSound = function () {
+  return this.name + " says " + this.sound;
+}
+
+var grover = new Mammal("Grover!");
+document.write(grover.makeSound() + "<br />")
+
+
+for (var prop in grover){
+document.write(prop + " : " + grover[prop] + "<br />");
+
+}
+
+document.write ("name Property of grover : " + grover.hasOwnProperty("name") + "<br />");
+
+
+
+document.write ("sound Property of grover : " + grover.hasOwnProperty("sound") + "<br />");
+
+
+Array.prototype.inArray = function inArray(value) {
+for (i = 0; i < this.length; i ++) {
+if(this[i] === value) {
+  return true;
+}
+}
+return false;
+
+}
+
+var sampArray = [1,2,3,4,5,6]
+
+document.write("3 in array ? " + sampArray.inArray(2) )
+
+function SecretCode () {
+var secretNum = 78;
+this.guessNum = function (num) {
+  if (num > 78) {
+    return "lower!"
+  }
+  else if (num < 78) {
+    return "higher!";
+  }
+  else {
+      return "you guessed it!";
+    }
+
+  }
+}
+
+
+
+
+var secret = new SecretCode();
+
+document.write("value of secretNum : " + secret.secretNum + "<br />");
+
+document.write("Is 70 the number : " + secret.guessNum(78) + "<br />");
+
+SecretCode.prototype.getsecret = function () {
+  return this.secretNum;
+}
+
+document.write("This secret number is " + secret.getsecret())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>

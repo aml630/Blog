@@ -6,12 +6,21 @@
   <script src = "js/jquery-1.11.3.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src = "js/scripts.js"></script>
-    <title>Code Bootcamp</title>
+ <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+ <script src="js/raphael.js"></script>
+<script src="js/jquery.usmap.js"></script>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+
+
 </head>
 
 <script type ="text/javascript" src = "js/header.js"></script>
 
 <div class = "container">
+
+
+
+
 
   <body>
 
@@ -21,19 +30,1919 @@
 
   <!--   <script type = "text/javascript" src = "js/post1.js"></script> -->
 <div class = "post">
-  <img class = 'featureImage' src = 'http://longfengdazhan.com/wp-content/uploads/2014/11/%E7%BA%A2%E8%8D%AF%E4%B8%B8.jpg'>
+
+  <img class = 'featureImage' src = 'https://pixabay.com/static/uploads/photo/2015/08/13/01/00/keyboard-886462_640.jpg'>
+<div class = "postshare"
+<a href='https://www.facebook.com/sharer/sharer.php?u=www.codetransition.com&t='  title='Share on Facebook' target='_blank' onclick='window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;'><img src='https://cdn2.iconfinder.com/data/icons/social-aquiocons/128/Aquicon-Facebook.png' height = '60px'></a>
+<a href='https://twitter.com/intent/tweet?source=&amp;text=Find Your Closest Coding BootCamp! http://www.codetransition.com/%20' target='_blank' title='Tweet' onclick='window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;'><img src='https://cdn2.iconfinder.com/data/icons/social-aquiocons/128/Aquicon-Twitter.png' height = '60px'></a>
+</div>
 
 
-   <h1 class = "postTitle">To Code or Not to Code.  That is the question.</h1>
+<h1>Click The Map Below To Find Coding BootCamps In Your State</h1>
+<div id="map" style="width: 700px; height: 400px;"></div>
+<div id="clicked-state"></div>
 
-   <p> stuffstuff </p>
-
-
-
-
+<!-- <h1>Prefer to search by language? No problem!</h1>
 
 
-        <script type = "text/javascript" src = "js/postShareButtons.js"></script>
+<select id = "languages" class="form-control">
+  <option value="None">No Selection</option>
+  <option value="Ruby">Ruby on Rails</option>
+  <option value="Javascript">Javascript</option>
+  <option value="HTML">HTML</option>
+  <option value="Angular">Angular JS</option>
+  <option value="Git">Git</option>
+  <option value="Backbone">Backbone JS</option>
+  <option value="Unix">Unix</option>
+</select>
+
+<button class = "searchByLanguage">Search By Language</button> -->
+<button class = "showAll">Show Me The Full List</button>
+
+
+
+<div class = "allBootcamps">
+
+
+
+
+<div class = "bootcamp" id = "ADA">
+  <img class = "bootcampLogo" src = "http://ada-dev.herokuapp.com/images/brand-logo.svg">
+    <a href = "http://adadevelopersacademy.org/"><h1>ADA Developers Academy</h1></a>
+
+    <table class="table1">
+
+    	<tbody>
+    		<tr>
+    			<th class="tableRow">Cost</th>
+    			<td>Free</td>
+
+    		</tr>
+    		<tr>
+    			<th class="tableRow">Location</th>
+    			<td>Seattle, WA</td>
+
+    		<tr>
+    			<th class="tableRow">Languages Offered</th>
+    			<td>JavaScript, Ruby on Rails</td>
+
+    		</tr>
+    		<tr>
+    			<th class="tableRow">Hours / Week</th>
+    			<td>50+</td>
+
+    		</tr>
+
+    	</tbody>
+    </table>
+
+
+
+
+</div>
+<div class = "bootcamp" id = "angelHack">
+
+  <img class = "bootcampLogo" src = "https://www.eventxtra.com/images/clients/angelhack-a8e0c77b.jpg">
+    <a href = "http://angelhack.com/about/"><h1>Angel Hack</h1></a>
+    <table class="table1">
+      <tbody>
+        <tr>
+          <th class="tableRow">Cost</th>
+          <td>$14,250</td>
+        </tr>
+        <tr>
+          <th class="tableRow">Location</th>
+          <td>San Francisco, CA</td>
+        <tr>
+          <th class="tableRow">Languages Offered</th>
+          <td>JavaScript, HTML/CSS</td>
+        </tr>
+        <tr>
+          <th class="tableRow">Hours / Week</th>
+          <td>65-80</td>
+        </tr>
+      </tbody>
+    </table>
+
+</div>
+
+<div class = "bootcamp" id = "anyoneCanLearn">
+  <img class = "bootcampLogo" src = "http://3bua6327gw0h1tavo91oia4m.wpengine.netdna-cdn.com/wp-content/uploads/2015/06/class-acltc2-1000x563.jpg">
+    <a href = "http://anyonecanlearntocode.com/"><h1>Anyone Can Learn To Code</h1></a>
+    <table class="table1">
+      <tbody>
+        <tr>
+          <th class="tableRow">Cost</th>
+          <td>$11,500</td>
+        </tr>
+        <tr>
+          <th class="tableRow">Location</th>
+          <td>San Francisco, CA + Chicago, IL </td>
+        <tr>
+          <th class="tableRow">Languages Offered</th>
+          <td>Ruby on Rails, HTML/CSS, JavaScript, AngularJS, Git</td>
+        </tr>
+        <tr>
+          <th class="tableRow">Hours / Week</th>
+          <td>20-30</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+<div class = "bootcamp" id = "appAcademy">
+
+    <img class = "bootcampLogo" src = "http://www.appacademy.io/assets/site/app-academy-logo-sharing.png">
+      <a href = "http://www.appacademy.io/"><h1>App Academy</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>18% of first year salary
+</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>San Francisco, CA + Chicago, IL </td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>Ruby on Rails, HTML/CSS, JavaScript, AngularJS, Git</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>20-30</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "apprentice">
+
+    <img class = "bootcampLogo" src = "http://cdn.skilledup.com/wp-content/uploads/2015/01/Apprentice-logo.jpg">
+      <a href = "http://www.apprentice.io/"><h1>Apprentice</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$11,500</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>San Francisco, CA + Chicago, IL </td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>Ruby on Rails, HTML/CSS, JavaScript, AngularJS, Git</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>20-30</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "betamore">
+
+    <img class = "bootcampLogo" src = "http://baltimore.aiga.org/wp-content/uploads/2015/02/SponsorLogo-400x200_0000_Betamore.png">
+      <a href = "https://betamore.com/academy/"><h1>Betamore Academy</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$3,000 Front End, $3,400 Back End</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Baltimore, MD</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>JavaScript, Ruby on Rails, HTML/CSS, Google Maps</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>20-30</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+
+<div class = "bootcamp" id = "bigNerdRanch">
+
+    <img class = "bootcampLogo" src = "https://d21buns5ku92am.cloudfront.net/26132/images/107562-e44d688f-d370-42d3-a94c-f0894dbdf7bf-logo_bnr-original-1378739179.png">
+      <a href = "https://www.bignerdranch.com/"><h1>Big Nerd Ranch</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$3,000-$6,000</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Atlanta + Monterey County, CA</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>JavaScript, Ruby on Rails, Python, Cross Platform</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>34-40</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "bitmakerLabs">
+
+    <img class = "bootcampLogo" src = "http://static1.squarespace.com/static/52cc5b38e4b01fd21fd4f65a/t/5310df02e4b08d35a87d8b1d/1393614595502/bitmakerlabslogofd5c1544442eab6624231d7e434b569b.png">
+      <a href = "https://bitmakerlabs.com/"><h1>Bit Maker Labs</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>Full Time: $9,000-$12,000, Part Time: $2,500</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Toronto, ON</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>JavaScript, Ruby on Rails, HTML/CSS, Jquery, JS</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>Full Time: 60+, Part Time: 30+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "brainStation">
+    <img class = "bootcampLogo" src = "http://www.networkinginvan.com/wp-content/uploads/formidable/BrainStation_Logo-vertical-blue28.png?d50d99">
+      <a href = "http://www.brainstation.io/"><h1>Brain Station</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>Full Time: $5,500, Part Time: $2,200</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Costa Rica + New York + Ottawa + Toronto + Vancouver</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>HTML/CSS, Sass, Less, Bootstrap, JavaScript, JQuery, Git, Ruby, Rails, SQL, Node.js, AngularJS
+</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>Full Time: 55+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "byteAcademy">
+    <img class = "bootcampLogo" src = "https://jlau-bucket-1.s3.amazonaws.com/uploads/blog/background_image/20/byte-20academy-20logo.png">
+      <a href = "http://www.byteacademy.co/"><h1>Byte Academy</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$10,000</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>New York</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>JavaScript, Python, HTML/CSS, Financial Tech, databases, Excel
+</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>50</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "codeChicago">
+    <img class = "bootcampLogo" src = "https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/63/s300/code-chicago-logo.png">
+      <a href = "http://www.codechicago.com/"><h1>Code Chicago</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$2,000</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Chicago</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>JavaScript, Ruby on Rails, HTML/CSS
+
+</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "codeCore">
+    <img class = "bootcampLogo" src = "http://cdn.skilledup.com/wp-content/uploads/2015/01/Code-Core-Logo.jpg">
+      <a href = "http://codecore.ca/"><h1>Code Core</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>FT $7,600  PT $750</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Chicago, IL</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>JavaScript, Ruby on Rails, HTML/CSS
+
+</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>80-100</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "coderCamps">
+    <img class = "bootcampLogo" src = "https://www.codercamps.com/Images/codercamps-logo-01.svg">
+      <a href = "https://www.codercamps.com/"><h1>Coder Camps</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$10,000</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Houston, TX + San Francisco, CA + Seattle, WA</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>JavaScript, HTML/CSS, .Net, Objective-C, Swift
+
+
+</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>80-100</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+
+<div class = "bootcamp" id = "coderFoundry">
+    <img class = "bootcampLogo" src = "http://www.bootcamps.in/wp-content/uploads/2014/06/CoderFoundry.png">
+      <a href = "http://www.coderfoundry.com/"><h1>Code Foundry</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$7,800-9,900</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Kernersville, NC + Charlette, NC</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>JavaScript, HTML/CSS, Angular, .NET
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "coderVox">
+    <img class = "bootcampLogo" src = "https://pbs.twimg.com/profile_images/471125756416757760/iDwOpjp4_400x400.png">
+      <a href = "http://codervox.com/"><h1>Coder Vox</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$9,980</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Austin, TX</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>JavaScript, HTML/CSS, PHP, GIT/source control
+
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "codeUp">
+    <img class = "bootcampLogo" src = "http://codeup.com/wp-content/uploads/2013/12/logo_@2x.png">
+      <a href = "http://codeup.com/"><h1>Codeup</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>Full Time: $16,000</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Provo, UT</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+              JavaScript, HTML/CSS, PHP, Git, JQuery, MySQL, Laravel
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "codingDojo">
+    <img class = "bootcampLogo" src = "https://coderdojo.com/wp-content/uploads/2012/09/CDRoundelWithLongText-LtBg1.png">
+      <a href = "http://www.codingdojo.com/"><h1>Coder Dojo</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$10,500 - $12,500</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Los Angeles + Seattle + San Francisco</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+AJAX, PHP, MVC, Framework API, Javascript, AngularJS, Node.js, Expresso.io, Socket.io, JavaScript, HAML, SASS Coffee Script, Ruby, Rails, Heroku, HTML/CSS, Angular            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "codingHouse">
+    <img class = "bootcampLogo" src = "https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/74/s300/coding-house-logo.png">
+      <a href = "http://codinghouse.co/"><h1>Coding House</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$10,500 - $12,500</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Los Angeles + Seattle + San Francisco</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+AJAX, PHP, MVC, Framework API, Javascript, AngularJS, Node.js, Expresso.io, Socket.io, JavaScript, HAML, SASS Coffee Script, Ruby, Rails, Heroku, HTML/CSS, Angular            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "craftsmenshipAcademy">
+    <img class = "bootcampLogo" src = "https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/42/s300/craftsmanship-academy-logo.jpg">
+      <a href = "http://craftsmanshipacademy.com/"><h1>Craftsmanship Academy</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$15,000</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Holly Springs, NC</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+Ruby, Sinatra, Rails, HTML (ERB/HAML/SLIM), SASS (CSS), JavaScript, CoffeeScript, Angular, Ember, Node, SQL ,no-SQL, Swift, Objective-C, Java         </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+
+<div class = "bootcamp" id = "davinciCoders">
+    <img class = "bootcampLogo" src = "http://www.innovationews.com/content/uploads/2015/03/Davinci_logo.jpg">
+      <a href = "http://www.davincicoders.com/"><h1>Davinci Coders</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$2,900-6,000
+</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Holly Springs, NC</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+Ruby, Sinatra, Rails, HTML (ERB/HAML/SLIM), SASS (CSS), JavaScript, CoffeeScript, Angular, Ember, Node, SQL ,no-SQL, Swift, Objective-C, Java         </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "deepDiveCoding">
+    <img class = "bootcampLogo" src = "http://cdn.skilledup.com/wp-content/uploads/2014/10/Coding-guide15_screenshot.jpg">
+      <a href = "http://stemuluscenter.org/products/deep-dive-coding-bootcamp"><h1>Deep Dive Coding</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$5,495
+
+</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Albuquerque, NM</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+JavaScript, HTML/CSS, jQuery, MySQL, PHP   </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "designation">
+    <img class = "bootcampLogo" src = "https://hackapp.co/uploads/schools/the-designation/logo.png">
+      <a href = "http://designation.io/"><h1>Designation</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$9,800
+
+</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Chicago + St. Louis</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+HTML/CSS, JavaScript, jQuery  </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "devBootcamp">
+    <img class = "bootcampLogo" src = "http://images.thegovlab.org/wordpress/wp-content/uploads/2014/06/Dev-Bootcamp.png">
+      <a href = "http://devbootcamp.com/"><h1>Developers Bootcamp</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$12,700-13,900
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Chicago + St. Louis</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+HTML/CSS, JavaScript, jQuery  </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+
+
+<div class = "bootcamp" id = "devLeague">
+    <img class = "bootcampLogo" src = "https://d3c5s1hmka2e2b.cloudfront.net/uploads/topic/image/134/DevLeague.jpg">
+      <a href = "http://www.devleague.com/"><h1>Dev League</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$10,000
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Honolulu, HI</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+HTML/CSS, JavaScript, Node.js, jQuery, AngularJS, Git, Meteor, Mocha, MongoDB </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>60-70</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "devMountain">
+    <img class = "bootcampLogo" src = "https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/820/s300/dev-mountain-logo.png">
+      <a href = "https://devmounta.in/"><h1>DevMountain</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>Full Time: $8,900
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Provo, Utah / Salt Lake City, Utah / Dallas</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+JavaScript, HTML/CSS, Git, jQuery, AngularJS, Node.js, React, MongoDB, Firebase, Xcode, Swift, Objective-C </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>60-70</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "devPointLabs">
+    <img class = "bootcampLogo" src = "http://photos.prnewswire.com/prn/20140306/LA78082LOGO">
+      <a href = "http://www.devpointlabs.com/"><h1>DevPoint Labs</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>Full Time: $8,500
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Provo, Utah / Salt Lake City, Utah / Dallas</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+              JavaScript, Ruby on Rails, HTML/CSS,
+</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "disruption">
+    <img class = "bootcampLogo" src = "http://www.disruptioninstitute.com/images/logo3.png">
+      <a href = "http://www.disruptioninstitute.com/"><h1>Disruption Institute</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>Full Time: $4,000-$6,000
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Kansas City, MO</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+              JavaScript, Ruby on Rails, HTML/CSS,
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "epicodus">
+    <img class = "bootcampLogo" src = "http://static1.squarespace.com/static/5524448ee4b0d6f6b83ab9e2/t/55244514e4b08ad5c0f51a01/1447700823871/?format=1500w">
+      <a href = "http://www.epicodus.com/"><h1>Epicodus</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$3,400-5,150
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Portland, OR</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+              JavaScript, Ruby on Rails, PHP, Drupal, HTML/CSS, SQL, AngularJS
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "fireBootCamp">
+    <img class = "bootcampLogo" src = "http://1tnel4wo5k122e50r2jf2di1.wpengine.netdna-cdn.com/wp-content/uploads/2014/10/firebootcamp-logo.png">
+      <a href = "http://firebootcamp.com/"><h1>Fire Boot Camp</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$12,000 - $9,900
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Redmond, WA Sydney, Australia</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+              JavaScript, HTML/CSS, .NET, ASP.NET, MS Visual Studios 2013
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "falitronSchool">
+    <img class = "bootcampLogo" src = "http://flatironschool.com/images/logo.png">
+      <a href = "http://flatironschool.com/"><h1>Flatiron School</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>FT $15,000  PT $1,500-3,500
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>New York</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+              HTML/CSS, Ruby, JavaScript, Objective-C, Swift
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "fullstackAcademy">
+    <img class = "bootcampLogo" src = "http://www.bootcamps.in/wp-content/uploads/2014/12/fullstack-academy.png">
+      <a href = "http://www.fullstackacademy.com/"><h1>Fullstack Academy</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$15,680
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>New York</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+JavaScript, Ruby on Rails, HTML/CSS, Angular
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>50+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "geekwiseAcademy">
+    <img class = "bootcampLogo" src = "http://geekwiseacademy.com/img/logo_home.jpg">
+      <a href = "http://geekwiseacademy.com/"><h1>Geekwise Academy</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$250
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Fresno, CA</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+              JavaScript, HTML/CSS, Angular, Ajax, XML, JSON
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>6+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "galvanize">
+    <img class = "bootcampLogo" src = "http://www.galvanize.com/wp-content/themes/galvanize/img/galvanize-logo.svg">
+      <a href = "http://www.galvanize.com/"><h1>Galvonize</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$21,000
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Boulder / Denver / Fort Collins / Seattle / San Francisco</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+              JavaScript, HTML/CSS, Angular, Ajax, XML, JSON
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "generalAssembly">
+    <img class = "bootcampLogo" src = "http://www.galvanize.com/wp-content/themes/galvanize/img/galvanize-logo.svg">
+      <a href = "https://generalassemb.ly/"><h1>General Assembly</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>Full Time: $11,500
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>NYC / Los Angeles / Boston / San Francisco / Washington D.C. / Seattle / Melbourne / London / Hong Kong</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+            JavaScript, Ruby, Rails, HTML/CSS
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40-70</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+
+<div class = "bootcamp" id = "grandCircus">
+    <img class = "bootcampLogo" src = "http://www.grandcircus.co/images/gc-logo-full.svg">
+      <a href = "http://www.grandcircus.co/"><h1>Grand Circus</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$5,500
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Detroit</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+          VB, C#, .NET, Java
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "hackReactor">
+    <img class = "bootcampLogo" src = "https://static1.squarespace.com/static/ta/522a22cbe4b04681b0bff826/2416/assets/img/hack-reactor-logo.png">
+      <a href = "http://www.hackreactor.com/"><h1>Hack Reactor</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$17,180
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Detroit</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+        JavaScript, Backbone.js, Node.js, HTML/CSS
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>60+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "hackbrightAcademy">
+    <img class = "bootcampLogo" src = "https://hackbrightacademy.com/content/themes/hackbright/img/logo.png">
+      <a href = "https://hackbrightacademy.com/"><h1>Hackbright Academy</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$15,000
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Detroit</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+Python, Flask, JavaScript, HTML/CSS, SQL, NoSQL, Git            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>60+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "hackYou">
+    <img class = "bootcampLogo" src = "http://jamesjee.com/project1/images/hackeryou.jpg">
+      <a href = "http://hackeryou.com/"><h1>Hacker You</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>Full Time: $7,500-$8,500
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Toronto</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+JavaScript, HTML/CSS, Jquery, Applied Visual Design, and Design Fundamentals        </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "theIronYard">
+    <img class = "bootcampLogo" src = "http://theironyard.com/images/iron-yard-logo.svg">
+      <a href = "http://theironyard.com/"><h1>The Iron Yard</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>Full Time: $12,000
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Atlanta / Austin / Charleston, SC / Columbia, SC / Dallas, TX / Durham, NC / Greenville, SC / Houston, TX / Indianapolis / Las Vegas / Little Rock / London / Nashville / Orlando / Raleigh, NC / Salt Lake City / San Antonio / Tampa – St. Petersburg / Washington, D.C.</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+HTML, CSS, JavaScript, jQuesry, Git, Python, Xcode, Objective-C, Swift, Ruby on Rails, Adobe CC        </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>60+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "ironHack">
+    <img class = "bootcampLogo" src = "https://fdemadrid.files.wordpress.com/2013/10/ironhack_logonegro.png">
+      <a href = "https://www.ironhack.com/en"><h1>The Iron Hack</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>Full Time: $6,000-$8,000
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Barcelona, Madrid, Miami</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+HTML5, CSS3, Javascript, Git, Github, Gist, Ruby, Rails      </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>55+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "launchAcademy">
+    <img class = "bootcampLogo" src = "https://www.launchacademy.com/assets/dyson_sphere/launch-logo-ec11466202b39431f9d3a67f9482886cd5de2f3301ce99067163159e48571006.png">
+      <a href = "https://www.launchacademy.com/"><h1>Launch Academy</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>Full Time: $12,500
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Barcelona, Madrid, Miami</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+              JavaScript, Ruby on Rails, HTML/CSS, N/A
+     </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+
+<div class = "bootcamp" id = "learnTechLabs">
+    <img class = "bootcampLogo" src = "https://www.launchacademy.com/assets/dyson_sphere/launch-logo-ec11466202b39431f9d3a67f9482886cd5de2f3301ce99067163159e48571006.png">
+      <a href = "https://learntechlabs.com/"><h1>LearnTech Labs</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>Full Time: $17,000
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Redwood City, CA / Hyderabad, India / Cebu, Philippines</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+            JavaScript, Node.js, AngularJS, jQuery, Postgres, Bootstrap, JSON, MongoDB, XCode, SQL, Objective-C, Swift
+     </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "learningFuze">
+    <img class = "bootcampLogo" src = "http://learningfuze.com/wp-content/uploads/2015/03/learning-fuze-20logo-202.png">
+      <a href = "http://learningfuze.com/"><h1>Learning Fuze</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>Full Time: $12,225
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Redwood City, CA / Hyderabad, India / Cebu, Philippines</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+            JavaScript, Node.js, AngularJS, jQuery, Postgres, Bootstrap, JSON, MongoDB, XCode, SQL, Objective-C, Swift
+     </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+
+<div class = "bootcamp" id = "learningFuze">
+    <img class = "bootcampLogo" src = "http://cdn.skilledup.com/wp-content/uploads/2014/10/Coding-guide34_screenshot.jpg">
+      <a href = "http://www.lighthouselabs.ca/"><h1>Light House Labs</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>Full Time: $8,000
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Redwood City, CA / Hyderabad, India / Cebu, Philippines</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+          JavaScript, Ruby on Rails, HTML/CSS, Angular, Blank
+     </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "makeSchool">
+    <img class = "bootcampLogo" src = "https://cdn.makeschool.com/assets/main/logo-4d7d51fc0ec76d5c5fe65a08f4f25d0b.svg">
+      <a href = "https://www.makeschool.com/"><h1>Make School</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>Full Time: $6,000
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Redwood City, CA / Hyderabad, India / Cebu, Philippines</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+              Objective-C, Cocos2D, Swift, Git
+
+     </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "makersAcademy">
+    <img class = "bootcampLogo" src = "http://res.cloudinary.com/bluenose-girl/image/upload/v1420402649/makers-academy_w7naqw.png">
+      <a href = "http://www.makersacademy.com/"><h1>Makers Academy</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>Full Time: $6,000
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Redwood City, CA / Hyderabad, India / Cebu, Philippines</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+              Ruby, Rails, HTML/CSS, Javascript, jQuery, AJAX, SQL, Sinatra
+     </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "makerSquare">
+    <img class = "bootcampLogo" src = "http://res.cloudinary.com/bluenose-girl/image/upload/v1420402649/makers-academy_w7naqw.png">
+      <a href = "http://www.makersacademy.com/"><h1>Makers Academy</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>Full Time: $16,920
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Austin / Los Angeles / San Francisco</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+              HTML/CSS, JavaScript, MongoDB, Meteor, Node.js, AngularJS
+     </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>66+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "makerSquare">
+    <img class = "bootcampLogo" src = "http://www.makersquare.com/nav/logo-big@2x.png">
+      <a href = "http://www.makersquare.com/"><h1>Maker Square</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>Full Time: $16,920
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Austin / Los Angeles / San Francisco</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+              HTML/CSS, JavaScript, MongoDB, Meteor, Node.js, AngularJS
+     </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>66+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "mobileMakersAcademy">
+    <img class = "bootcampLogo" src = "http://static1.squarespace.com/static/5245963ce4b0dedb521c28a3/t/561d267ee4b00e055e2d3d45/1448384898931/?format=400w">
+      <a href = "http://mobilemakers.co/"><h1>Mobile Makers Academy</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>Full Time: $9,000-$11,000
+
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Chicago / San Francisco</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+Objective-C, Swift, Git, Xcode, iOS 8 SDK, Interface Builder     </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "nashvilleSoftwareSchool">
+    <img class = "bootcampLogo" src = "http://nashvillesoftwareschool.com/images/NSS-logo-horizontal-small.jpg">
+      <a href = "http://nashvillesoftwareschool.com/"><h1>Nashville Software School</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>Full Time: $10,500
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Nashville</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+HTML/CSS, JavaScript, AngularJS, jQuery, Git, JSON, AJAX, Ruby on Rails, .Net, C#, Node.js    </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>35+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "newYorkCodeDesignAcademy">
+    <img class = "bootcampLogo" src = "https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/101/s300/new-york-code-and-design-logo.gif">
+      <a href = "http://nycda.com/"><h1>New York Design Academy</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>Full Time: $10,000
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>New York, Philadelphia</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+HTML/CSS, FTP, JavaScript, jQuery, Ruby, Rails, Git, Objective-C, Swift, AngularJS   </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "newYorkCodeDesignAcademy">
+    <img class = "bootcampLogo" src = "https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/101/s300/new-york-code-and-design-logo.gif">
+      <a href = "http://nycda.com/"><h1>Omaha Code School</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>Full Time: $7,500
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Omaha, NE</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+Ruby on Rails, HTML5, CSS, Javascript, Git, jQuery, CoffeeScript, SASS, HAML, Jekyll, WordPress  </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "portlandCodeGuild">
+    <img class = "bootcampLogo" src = "https://pdxcodeguild.com/static/images/guild_logo_orange.png">
+      <a href = "https://pdxcodeguild.com/"><h1>Portland Code School</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>Full Time: $8,000
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Portland, OR</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+HTML/CSS, Python  </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>35+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "recurseCenter">
+    <img class = "bootcampLogo" src = "https://d29xw0ra2h4o4u.cloudfront.net/assets/logo-no-text-ab02ba4e6d854337f7d7515e08f57520a82883ace40d22b4de689435cc211ffd.png">
+      <a href = "https://www.recurse.com/"><h1>Recurse Center</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>Free
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>New York</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+JavaScript, Ruby on Rails, Python, HTML/CSS, Angular, .Net  </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>35+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "reFactor">
+    <img class = "bootcampLogo" src = "https://d29xw0ra2h4o4u.cloudfront.net/assets/logo-no-text-ab02ba4e6d854337f7d7515e08f57520a82883ace40d22b4de689435cc211ffd.png">
+      <a href = "https://www.recurse.com/"><h1>Refactor U</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$13,500
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Boulder</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+JavaScript, HTML/CSS, Bootstrap, Node.js, jQuery, Git, MongoDB, JSON </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>35+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+
+<div class = "bootcamp" id = "rocketU">
+    <img class = "bootcampLogo" src = "https://spain2sv.files.wordpress.com/2011/05/rocketspacelogo.jpg">
+      <a href = "https://rocketspace.com/"><h1>Rocket U</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$12,500
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>San Francisco</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+Python, Django, Git, Angular, Angular JS </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>60+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "rockItBootcamp">
+    <img class = "bootcampLogo" src = "https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/235/s300/rockit-bootcamp-logo.jpeg">
+      <a href = "https://www.rockitbootcamp.com/"><h1>Refactor U</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$8,000
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>London, Pheonix</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+avaScript, HTML/CSS, Linux, MySQL, OOP, jQuery, Patterns, SDLC Agile/Waterfall, Ajax </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>60+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class = "bootcamp" id = "Sabio">
+    <img class = "bootcampLogo" src = "http://contact-centres.com/wp-content/uploads/2014/08/sabio.logo_.2014.jpg">
+      <a href = "http://sabio.la/"><h1>Sabio</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$13,450
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Los Angeles</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+JavaScript, Ruby on Rails, Python, HTML/CSS, Angular, .Net, jQuery </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "shillingtonSchool">
+    <img class = "bootcampLogo" src = "http://shillingtonschool.com/sites/all/themes/shillington/logo.png">
+      <a href = "http://shillingtonschool.com/"><h1>Shillington School</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$12,950
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Brisbane / London / Manchester / Melbourne / New York / Sydney</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+HTML/CSS, InDesign, Illustrator, Photoshop </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "softwareGuild">
+    <img class = "bootcampLogo" src = "http://www.thesoftwareguild.com/wp-content/uploads/swg_logo-white.png">
+      <a href = "http://www.thesoftwareguild.com/"><h1>Software Guild</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$10,000
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Akron, OH</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+C#, .Net, Java, ASP.net, HTML/CSS, JavaScript, jQuery, AngularJS, Bootstrap, Visual Studio, Git </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "starterLeague">
+    <img class = "bootcampLogo" src = "http://dt0rp393uxklx.cloudfront.net/images/logo-bffec687.png">
+      <a href = "http://www.starterleague.com/"><h1>Starter League</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$8,000
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Chicago, IL</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+JavaScript, Ruby on Rails, HTML/CSS </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>30+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "startupInstitute">
+    <img class = "bootcampLogo" src = "http://www.starterschool.com/">
+      <a href = "http://www.starterschool.com/"><h1>Starter School</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$5,250
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Berlin / Boston / Chicago / London / New York</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+JavaScript, Ruby on Rails, Python, Web Development </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>60+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "theTechAcademy">
+    <img class = "bootcampLogo" src = "http://learncodinganywhere.com/techlogo.png">
+      <a href = "http://learncodinganywhere.com/"><h1>The Tech Academy</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$7,000-$9,000
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Portland, OR</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+Python, JavaScript, PHP, HTML/CSS, C#, ASP.net </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "techTalentSouth">
+    <img class = "bootcampLogo" src = "https://pbs.twimg.com/profile_images/501426030171533312/ZaVIP9Y0_400x400.png">
+      <a href = "http://techtalentsouth.com/"><h1>The Tech Academy</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$6,250 - $4,250
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Asheville / Atlanta / Charlotte / Dallas / New Orleans / Raleigh</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+Ruby, Rails, HTML/CSS, JavaScript, Ajax, </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "turingSchool">
+    <img class = "bootcampLogo" src = "https://pbs.twimg.com/profile_images/444146105312243712/EHdy1GyV.png">
+      <a href = "http://turing.io/"><h1>Turing School</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$17,500
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Denver</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+Ruby, Rails, Sinatra, JavaScript </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "turnToTech">
+    <img class = "bootcampLogo" src = "http://turntotech.io/wp-content/themes/turntotech/images/logo.png">
+      <a href = "http://turntotech.io/"><h1>Turn To Tech</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$10,000
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>New York</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+Ruby, Rails, HTML/CSS, JavaScript, jQuery, SQL, Sass, Sinatra, Swift, Objective-C</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "weCanCodeIt">
+    <img class = "bootcampLogo" src = "https://wecancodeit.org/wp-content/uploads/2015/01/WCCIT-logo-notag-300.png">
+      <a href = "https://wecancodeit.org/"><h1>We Can Code It</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$10,000
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Cleveland</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+HTML, CSS, JavaScript, jQuery, Angular, C#, .net, SQL</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>40+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class = "bootcamp" id = "Wyncode">
+    <img class = "bootcampLogo" src = "https://wecancodeit.org/wp-content/uploads/2015/01/WCCIT-logo-notag-300.png">
+      <a href = "https://wecancodeit.org/"><h1>We Can Code It</h1></a>
+      <table class="table1">
+        <tbody>
+          <tr>
+            <th class="tableRow">Cost</th>
+            <td>$10,000
+            </td>
+          </tr>
+          <tr>
+            <th class="tableRow">Location</th>
+            <td>Miami</td>
+          <tr>
+            <th class="tableRow">Languages Offered</th>
+            <td>
+JavaScript, Ruby on Rails, HTML/CSS, Objective-C, Swift, Xcode, Citrix APIs</td>
+          </tr>
+          <tr>
+            <th class="tableRow">Hours / Week</th>
+            <td>45+</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
 
 
       </div>
